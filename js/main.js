@@ -8,10 +8,7 @@ function handleFormSubmit() {
     let projet = document.getElementById("projet").value;
     let surnom = document.getElementById("surnom").value;
     let comment = document.getElementById("comment").value;
-<<<<<<< HEAD
-=======
     let comment2 = document.getElementById("comment2").value;
->>>>>>> 4c7026f (update)
     
   
 // envoyer l'email avec la librairie SMTPJS 

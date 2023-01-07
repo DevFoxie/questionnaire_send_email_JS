@@ -1,11 +1,19 @@
 body {
+<<<<<<< HEAD
     background-color: #5437d3;
+=======
+    background-color: #9c6374;
+>>>>>>> 4c7026f (update)
     font-family: Verdana;
     text-align: center;
 }
 
 #form {
+<<<<<<< HEAD
     background-color: #fff;
+=======
+    background-color: rgb(41, 41, 41);
+>>>>>>> 4c7026f (update)
     max-width: 500px;
     margin: 50px auto;
     padding: 30px 20px;
@@ -40,8 +48,13 @@ body {
 }
 
 button {
+<<<<<<< HEAD
     background-color: #05c46b;
     border: 1px solid #777;
+=======
+    background-color: #009721;
+    border: 2px solid rgb(0, 0, 0);
+>>>>>>> 4c7026f (update)
     border-radius: 2px;
     font-family: inherit;
     font-size: 21px;

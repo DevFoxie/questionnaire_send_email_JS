@@ -5,25 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire g404 par DevFoxie</title>
 
-    <!--CUSTOM CSS-->
+    <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="../css/custom.css">
 
-    <!--FONTAWESOME INTEGRATION-->
+    <!-- FONT AWESOME INTEGRATION -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 
-    <!-- FAVICON-->
+    <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="180x180" href="../favicon/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
-    <!-- Materialize  -->
+    <!-- MATERIALIZE -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
-    <title>Questionnaire g404 par DevFoxie</title>
+    <!-- SweetAlert CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
+
+<!-- SweetAlert JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+
 </head>
 
 <body>
@@ -31,160 +37,97 @@
     <header>
         <nav>
             <div class="nav-wrapper pink darken-4">
-                <a href="#" class="brand-logo center">Questionnaire
-                </a>
+                <a href="#" class="brand-logo center">Questionnaire</a>
             </div>
         </nav>
     </header>
 
-    <h1>Hello les gars (et Maev)</h1>
-
-    <!-- Create Form -->
-    <form action="javascript:handleFormSubmit()" method="post" enctype="text/plain" id="form">
-
-        <!-- Details -->
-        <div class="form-control">
-            <label for="name" id="label-name">
-                Prénom
-            </label>
-
-            <!-- Input Type Text -->
-            <input type="text" id="name" placeholder="Enter your name" />
-        </div>
-
-        <div class="form-control">
-            <label for="email" id="label-email">
-                Email
-            </label>
-
-            <!-- Input Type Email-->
-            <input type="email" id="email" placeholder="Enter your email" />
-        </div>
-
-        <div class="form-control">
-            <label for="age" id="label-age">
-                Age
-            </label>
-
-            <!-- Input Type Text -->
-            <input type="text" id="age" placeholder="Enter your age" />
-        </div>
-
-        <div class="form-control">
-            <label for="formateur" id="label-formateur">
-                Quel est ton formateur préféré ?
-            </label>
-
-            <!-- Dropdown options -->
-            <select name="formateur" id="formateur">
-                <option value="basile">Basile</option>
-                <option value="hamza">Hamza</option>
-                <option value="gotaga">
-                    Gotaga
-                </option>
-                <option value="aucun">Aucun</option>
-            </select>
-        </div>
-
-        <div class="form-control">
-            <label for="langage" id="label-langage">
-                Quel est ton "langage" de prog préféré pour l'instant ?
-            </label>
-
-            <!-- Dropdown options -->
-            <select name="langage" id="langage">
-                <option value="html">HTML</option>
-                <option value="css">CSS</option>
-                <option value="js">
-                    JS
-                </option>
-                <option value="mysql">MySQL</option>
-            </select>
-        </div>
-
-        <div class="form-control">
-            <label for="projet" id="label-projet">
-                Quel est ton projet pro?
-            </label>
-
-            <!-- Dropdown options -->
-            <select name="projet" id="projet">
-                <option value="dev web">Dev web for life</option>
-                <option value="concepteur d'appli">Concepteur d'appli (IOS IS BETTER)</option>
-                <option value="chômage">
-                    Chômeur
-                </option>
-                <option value="autre">Autre</option>
-            </select>
-        </div>
-
-        <div class="form-control">
-            <label for="surnom" id="label-surnom">
-                Meilleur surnom de la promo actuellement ?
-            </label>
-
-            <!-- Dropdown options -->
-            <select name="surnom" id="surnom">
-                <option value="la daronne suprême">La daronne suprême</option>
-                <option value="Gotaga">Gotaga</option>
-                <option value="Polo">
-                    Polo
-                </option>
-                <option value="Naps">Naps (mon favori perso)</option>
-            </select>
-        </div>
-
-        <div class="form-control">
-            <label for="comment">
-                Quel application web / programme souhaites-tu me voir développer ensuite ?
-            </label>
-
-            <!-- multi-line text input control -->
-            <textarea name="comment" id="comment" placeholder="Enter your comment here">
-            </textarea>
-        </div>
-
-        <!-- Multi-line Text Input Control -->
-        <button type="submit" value="submit">
-            Envoyer
-        </button>
-    </form>
-</body>
-
-</html>
-
-</div>
-
-<footer class="page-footer pink darken-4">
     <div class="container">
-        <div class="row">
-            <div class="col l6 s12">
-                <h5 class="white-text">Merci d'avoir répondu aux questions ...</h5>
-                <p class="grey-text text-lighten-4">N'hésitez pas à regarder mes prochains projets !</p>
-            </div>
-            <div class="col l4 offset-l2 s12">
-            </div>
-        </div>
-    </div>
-    <div class="footer-copyright">
-        <div class="container">
-            © 2023 Copyright DevFoxie distribution
-            <a class="grey-text text-lighten-4 right" href="https://github.com/DevFoxie">Lien vers mon Github</a>
-        </div>
-    </div>
-</footer>
+        <h1>Hello World ! <i class="fa-solid fa-ghost"></i></h1>
+        <img src="../garage-purple.png" alt="g404">
 
-<!--CUSTOM JS-->
-<script src="../js/main.js"></script>
-<script src="../js/back-top-top.js"></script>
-<!-- SMTPJS library GRACE A BASILE !!! -->
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<!-- Materialize script -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-<!--FONT AWESOME SCRIPT-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
-    integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- Create Form -->
+        <form action="javascript:handleFormSubmit()" method="post" enctype="multipart/form-data" id="form">
+            <!-- Details -->
+            <div class="form-control">
+                <label for="name" id="label-name">Prénom</label>
+                <!-- Input Type Text -->
+                <input type="text" id="name" placeholder="Entre ton prénom" />
+            </div>
+
+            <div class="form-control">
+                <label for="email" id="label-email">Email</label>
+                <!-- Input Type Email -->
+                <input type="email" id="email" placeholder="Entre ton prénom" />
+            </div>
+
+            <div class="form-control">
+                <label for="age" id="label-age">Age</label>
+                <!-- Input Type Text -->
+                <input type="text" id="age" placeholder="Entre ton âge" />
+            </div>
+
+            <div class="form-control">
+                <label for="langage" id="label-langage">Vers quelle horizon te diriges-tu dans le dev ?</label>
+                <!-- Dropdown options -->
+                <select name="langage" id="langage">
+                    <option value="back">Backend</option>
+                    <option value="front">Frontend</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <label for="comment">Vois-tu des points d'amélioration à la formation ? Si oui, lesquels ?</label>
+                <!-- Multi-line text input control -->
+                <textarea name="comment" id="comment" placeholder="Entre ton commentaire ici"></textarea>
+            </div>
+
+            <div class="form-control">
+                <label for="comment2">Existe-t-il pour toi des points négatifs à la formation ? Si oui, lesquels
+                    ?</label>
+                <!-- Multi-line text input control -->
+                <textarea name="comment2" id="comment2" placeholder="Entre ton commentaire ici"></textarea>
+            </div>
+
+            <!-- Multi-line Text Input Control -->
+            <button type="submit">Envoyer</button>
+
+        </form>
+    </div>
+
+    <footer class="page-footer pink darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Merci d'avoir répondu aux questions ...</h5>
+                    <p class="grey-text text-lighten-4">N'hésitez pas à regarder mes prochains projets !</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2023 Copyright DevFoxie distribution
+                <a class="grey-text text-lighten-4 right" href="https://github.com/DevFoxie">Lien vers mon Github</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CUSTOM JS -->
+    <script src="../js/main.js"></script>
+    <script src="../js/back-top-top.js"></script>
+
+    <!-- SMTPJS library -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- MATERIALIZE SCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <!-- FONT AWESOME SCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+        integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
 

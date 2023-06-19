@@ -1,5 +1,5 @@
 body {
-    background-color: #5437d3;
+    background-color: #05c46b;
     font-family: Verdana;
     text-align: center;
 }
@@ -9,7 +9,7 @@ body {
     max-width: 500px;
     margin: 50px auto;
     padding: 30px 20px;
-    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .form-control {
@@ -20,17 +20,22 @@ body {
 .form-control label {
     display: block;
     margin-bottom: 10px;
+    color: #05c46b;
+    font-size: 18px;
 }
 
 .form-control input,
 .form-control select,
 .form-control textarea {
-    border: 1px solid #777;
-    border-radius: 2px;
+    border: none;
+    border-bottom: 2px solid #777;
+    background-color: transparent;
     font-family: inherit;
     padding: 10px;
     display: block;
-    width: 95%;
+    width: 100%;
+    color: black;
+    transition: border-color 0.3s ease;
 }
 
 .form-control input[type="radio"],
@@ -39,9 +44,16 @@ body {
     width: auto;
 }
 
+.form-control input:focus,
+.form-control select:focus,
+.form-control textarea:focus {
+    outline: none;
+    border-bottom-color: #05c46b;
+}
+
 button {
     background-color: #05c46b;
-    border: 1px solid #777;
+    border: none;
     border-radius: 2px;
     font-family: inherit;
     font-size: 21px;
@@ -49,37 +61,33 @@ button {
     width: 100%;
     margin-top: 50px;
     margin-bottom: 20px;
+    padding: 15px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #04a05a;
 }
 
 #myBtn {
     display: none;
-    /* Hidden by default */
     position: fixed;
-    /* Fixed/sticky position */
     bottom: 20px;
-    /* Place the button at the bottom of the page */
     right: 30px;
-    /* Place the button 30px from the right */
     z-index: 99;
-    /* Make sure it does not overlap */
     border: none;
-    /* Remove borders */
     outline: none;
-    /* Remove outline */
-    background-color: grey;
-    /* Set a background color */
-    color: white;
-    /* Text color */
+    background-color: #05c46b;
+    color: #fff;
     cursor: pointer;
-    /* Add a mouse pointer on hover */
     padding: 15px;
-    /* Some padding */
     border-radius: 10px;
-    /* Rounded corners */
     font-size: 18px;
+    transition: background-color 0.3s ease;
 }
 
 #myBtn:hover {
-    background-color: #555;
-    /* Add a dark-grey background on hover */
+    background-color: #04a05a;
 }
